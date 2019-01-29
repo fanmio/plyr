@@ -3882,7 +3882,17 @@ var defaults$1 = {
     ads: {
         enabled: false,
         publisherId: ''
+    },
+
+    // Vimeo plugin
+    vimeo: {
+        byline: false,
+        portrait: false,
+        title: false,
+        speed: true,
+        transparent: false
     }
+
 };
 
 // ==========================================================================
@@ -5135,11 +5145,11 @@ var vimeo = {
             loop: player.config.loop.active,
             autoplay: player.autoplay,
             // muted: player.muted,
-            byline: false,
-            portrait: false,
-            title: false,
-            speed: true,
-            transparent: 0,
+            byline: player.config.vimeo.byline,
+            portrait: player.config.vimeo.portrait,
+            title: player.config.vimeo.title,
+            speed: player.config.vimeo.speed,
+            transparent: player.config.vimeo.transparent === true ? 1 : 0,
             gesture: 'media',
             playsinline: !this.config.fullscreen.iosNative
         };

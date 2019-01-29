@@ -4092,6 +4092,9 @@ singleton.Client = Client;
                 ads: {
                     enabled: true,
                     publisherId: '918848828995742'
+                },
+                vimeo: {
+                    transparency: true
                 }
             });
 
