@@ -117,6 +117,9 @@ import Raven from 'raven-js';
                     enabled: true,
                     publisherId: '918848828995742',
                 },
+                vimeo: {
+                    transparency: true,
+                },
             });
 
             // Expose for tinkering in the console
